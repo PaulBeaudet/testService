@@ -3,7 +3,7 @@
 var test = {
     response: function(){
         return function(req, res){
-            res.send('hello world');
+            res.send(process.env.MESSAGE);
         }
     }
 }
