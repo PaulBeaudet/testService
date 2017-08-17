@@ -6,6 +6,12 @@ var test = {
             // res.send(process.env.MESSAGE);
             res.send('try again');
         }
+    },
+    otherRes: function(){
+        return function(req, res){
+            // res.send(process.env.MESSAGE);
+            res.send('this is another test');
+        }
     }
 }
 
@@ -18,6 +24,7 @@ var serve = {                                                // handles express 
         app.use(serve.parse.json());                         // support JSON bodies
         var router = serve.express.Router();                 // create express router object to add routing events to
         router.get('/', test.response());                    // real listener post route
+        router.get('/test', test.otherRes());
         app.use(router);                                     // get express to user the routes we set
         return http;
     }
