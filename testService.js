@@ -4,7 +4,7 @@ var test = {
     response: function(){
         return function(req, res){
             // res.send(process.env.MESSAGE);
-            res.send('another message');
+            res.send('less conflicting message');
         }
     }
 }
