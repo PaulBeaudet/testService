@@ -10,7 +10,7 @@ var test = {
     otherRes: function(){
         return function(req, res){
             // res.send(process.env.MESSAGE);
-            res.send('this is another test');
+            res.send('change');
         }
     }
 }
