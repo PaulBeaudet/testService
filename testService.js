@@ -4,7 +4,7 @@ var test = {
     response: function(){
         return function(req, res){
             // res.send(process.env.MESSAGE);
-            res.send('try again');
+            res.send('ur a towel');
         }
     },
     otherRes: function(){
