@@ -4,13 +4,13 @@ var test = {
     response: function(){
         return function(req, res){
             // res.send(process.env.MESSAGE);
-            res.send('omg just work');
+            res.send('you know you want to work');
         }
     },
     otherRes: function(){
         return function(req, res){
             // res.send(process.env.MESSAGE);
-            res.send('change');
+            res.send('please work');
         }
     }
 }
