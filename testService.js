@@ -31,7 +31,7 @@ var serve = {                                                // handles express 
 };
 
 var http = serve.theSite();                                  // set express middleware and routes up
-http.listen(process.env.PORT);                               // listen on specified PORT enviornment variable
-// http.listen(3000);                                           // listen on specified PORT enviornment variable
+// http.listen(process.env.PORT);                               // listen on specified PORT enviornment variable
+http.listen(3000);                                           // listen on specified PORT enviornment variable
 
 console.log('Starting pushdetector version ' + require('./package.json').version); // show version of package when restarted
