@@ -3,8 +3,8 @@
 var test = {
     response: function(){
         return function(req, res){
-            // res.send(process.env.MESSAGE);
-            res.send('you know you want to work');
+            res.send(process.env.MESSAGE);
+            // res.send('you know you want to work');
         };
     },
     otherRes: function(){
