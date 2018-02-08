@@ -31,6 +31,7 @@ var serve = {                                                // handles express 
 };
 
 var http = serve.theSite();                                  // set express middleware and routes up
+console.log(process.env.PORT);
 http.listen(process.env.PORT);                               // listen on specified PORT enviornment variable
 // http.listen(3000);                                           // listen on specified PORT enviornment variable
 
