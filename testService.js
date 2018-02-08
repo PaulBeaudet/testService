@@ -5,15 +5,15 @@ var test = {
         return function(req, res){
             // res.send(process.env.MESSAGE);
             res.send('you know you want to work');
-        }
+        };
     },
     otherRes: function(){
         return function(req, res){
             // res.send(process.env.MESSAGE);
             res.send('please work');
-        }
+        };
     }
-}
+};
 
 var serve = {                                                // handles express server setup
     express: require('express'),                             // server framework library
