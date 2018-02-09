@@ -1,6 +1,6 @@
 {
   "name": "testservice",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "test test testing",
   "main": "testService.js",
   "scripts": {
